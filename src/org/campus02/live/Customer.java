@@ -26,4 +26,11 @@ public class Customer extends Person {
                 ", lastname='" + getLastname() + '\'' +
                 '}';
     }
+
+    @Override
+    public void doSomething() {
+        System.out.println("customerNumber = " + customerNumber);
+        super.doSomething();
+    }
+    
 }

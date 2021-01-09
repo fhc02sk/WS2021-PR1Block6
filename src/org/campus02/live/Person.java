@@ -1,6 +1,6 @@
 package org.campus02.live;
 
-public class Person {
+public class Person  {
     protected String firstname;
     private String lastname;
 
