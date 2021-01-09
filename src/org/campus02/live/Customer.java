@@ -1,11 +1,13 @@
 package org.campus02.live;
 import java.util.ArrayList;
 
-public class Customer {
+// Customer is-a Person
+public class Customer extends Person {
     private int customerNumber;
     private ArrayList<Address> addresses;// = new ArrayList<>();
 
-    public Customer(int customerNumber) {
+    public Customer(String firstname, String lastname, int customerNumber) {
+        super(firstname, lastname);
         this.customerNumber = customerNumber;
         this.addresses = new ArrayList<>();
     }
@@ -19,6 +21,9 @@ public class Customer {
         return "Customer{" +
                 "customerNumber=" + customerNumber +
                 ", addresses=" + addresses +
+                ", firstname='" + firstname + '\'' +
+                ", firstname='" + getFirstname() + '\'' +
+                ", lastname='" + getLastname() + '\'' +
                 '}';
     }
 }

@@ -7,9 +7,10 @@ public class DemoCustomerApp {
         System.out.println("a.toString() = " + a.toString());
 
         // Neuen Customer
-        Customer c = new Customer(123);
+        Customer c = new Customer("Susi", "Sorglos", 123);
         c.addAddress(a);
         System.out.println("c.toString() = " + c.toString());
-        
+        c.doSomething();
+
     }
 }

@@ -1,5 +1,7 @@
 package org.campus02.dogexample;
 
+import org.campus02.live.Customer;
+
 public class DemoDogApp {
     public static void main(String[] args) {
 
@@ -16,6 +18,5 @@ public class DemoDogApp {
         beagle.weight = 5500;
         System.out.println("beagle.toString() = " + beagle.toString());
         beagle.bark();
-
     }
 }
