@@ -2,7 +2,6 @@ package org.campus02.documents;
 
 import org.campus02.test.PrintManager;
 
-import javax.print.Doc;
 import java.util.ArrayList;
 
 public class DemoApp {
