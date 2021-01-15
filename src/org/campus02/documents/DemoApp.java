@@ -1,5 +1,7 @@
 package org.campus02.documents;
 
+import org.campus02.test.PrintManager;
+
 import java.util.ArrayList;
 
 public class DemoApp {
@@ -18,6 +20,18 @@ public class DemoApp {
 
         TextDocument textDocument = new TextDocument("demo.txt", "inhalt unserer Textdatei");
         textDocument.printDocument();
+
+        System.out.println("\nPrintmanager:");
+        PrintManager pm = new PrintManager();
+        pm.addDocument(textDocument);
+        pm.addDocument(bild);
+        pm.addDocument(csvFile1);
+
+        pm.printAll();
+
+
+        Document dSearch = pm.findDocument("demo.txt");
+        dSearch.printDocument();
 
     }
 }
