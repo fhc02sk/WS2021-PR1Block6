@@ -9,7 +9,6 @@ public class TextDocument extends Document {
         this.content = content;
     }
 
-    @Override
     public void printDocument() {
         System.out.println("TextDocument: " + filename + " => " + content);
     }

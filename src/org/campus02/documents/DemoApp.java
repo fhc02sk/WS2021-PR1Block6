@@ -2,6 +2,7 @@ package org.campus02.documents;
 
 import org.campus02.test.PrintManager;
 
+import javax.print.Doc;
 import java.util.ArrayList;
 
 public class DemoApp {
@@ -21,12 +22,14 @@ public class DemoApp {
         TextDocument textDocument = new TextDocument("demo.txt", "inhalt unserer Textdatei");
         textDocument.printDocument();
 
+        Document d = new TextDocument("demo2.txt", "inhalt 2 unserer Textdatei 2");
+
         System.out.println("\nPrintmanager:");
         PrintManager pm = new PrintManager();
         pm.addDocument(textDocument);
         pm.addDocument(bild);
         pm.addDocument(csvFile1);
-
+        pm.addDocument(d);
         pm.printAll();
 
 
