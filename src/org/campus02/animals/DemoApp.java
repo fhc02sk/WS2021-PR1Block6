@@ -13,6 +13,10 @@ public class DemoApp {
         Animal tier = new Cat("weiß", "schnuffi", 2);
         tier.walk();
 
+        Fly f = new FlyingDog("grau", "fliegender hund", 2);
+        f.fly();
+        FlyingDog fd = (FlyingDog) f;
+        fd.makeNoise();
 
     }
 }
