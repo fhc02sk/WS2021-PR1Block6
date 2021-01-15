@@ -8,7 +8,7 @@ public class Document {
     }
 
     public void printDocument(){
-        System.out.println("Document: " + filename);
+
     }
 
     public String getFilename() {
